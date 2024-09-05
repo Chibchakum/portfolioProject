@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedicaSafe</title>
+    <link rel="stylesheet" href="ms-style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"><a href="./index.html">William Foley</a></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="./index.html#about">About</a></li>
+                <li><a href="./index.html#experience">Experience</a></li>
+                <li><a href="./index.html#projects">Projects</a></li>
+                <li><a href="./index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">William Foley</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span> <!--HTML for line in hamburger--> 
+                    <span></span> <!--HTML for line in hamburger-->
+                    <span></span> <!--HTML for line in hamburger-->
+                </div>
+                <div class="menu-links">
+                    <li><a href="./index.html#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="./index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="./index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="./index.html#contact" onclick="toggleMenu()">Contact</a></li>  
+                </div>
+            </div>
+    </nav>
+    <section id="ms">
+        <div class="slider-container">
+            <div class="slide">
+                <div class="item" style="background-image: url(./resources/medicasafe/device-test.jpeg);">
+                    <div class="content">
+                        <div class="name">Protoype Testing</div>
+                        <br><p class="des">We designed, built, and tested our prototype devices in house</p>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(./resources/medicasafe/MS5000_1-v2.jpg);">
+                    <div class="content">
+                        <div class="name">MS 5000 Smart Dispenser Key</div>
+                        <br><p class="des">Smart handheld device that controls a patient's medication regiment</p>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(./resources/medicasafe/MS5000_2-v2.jpg);">
+                    <div class="content">
+                        <div class="name">MS 5000 Cartridge</div>
+                        <br><p class="des">Locked cartrige which holds buprenorphine naloxone</p>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(./resources/medicasafe/MS5000_3-v2.jpg);">
+                    <div class="content">
+                        <div class="name">MS 5000 Loaded</div>
+                        <br><p class="des">The GameBoy inspired design allows the SmartKey to unlock the Cartrdige in order to dispense the appropriate dose of medication</p>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(./resources/medicasafe/cartridge-test.jpeg);">
+                    <div class="content">
+                        <div class="name">Cartridge Moisture Seal Testing</div>
+                        <br><p class="des">Partnered with testing facilities to ensure the Cartridge met IP22 water seal standards</p>
+                    </div>
+                </div>  
+            </div>
+            <div class="ms-button">
+                <button class="prev"><img src="./assets/arrow_left.svg" alt="Left Arrow Icon" class="arrow""/></button>
+                <button class="next"><img src="./assets/arrow_right.svg" alt="Right Arrow Icon" class="arrow""/></button>
+            </div>
+        </div>
+    </section>
+    <section id="description">
+        <h1 class="title">MS 5000 Smart Pill Dispenser</h1>
+        <h3 class="subtitle">MedicaSafe 2015-2022</h3>
+        <p class="text">The MS5000 System looks to solve the opioid crisis by helping patiencts suffering from opioid use disorder regulate and control their treatment dosages. The system allows patients to peceive their treatment refills through the locked, tamper-resistant and tamper-evident disposable cartridges.
+        <br>The system consists of three parts: <ul class="list1"> 
+            <li>Smart Key which acts as the patient UI and pill dispenser</li>
+            <li>Locked Cartrige which houses the medication</li>
+            <li>Software that tracks and regulates the treatment regiment</li>
+        </ul>
+        <br>As a team we worked together on the original concept, design, prototypes, manufactured product, and FDA submission + testing.
+        <br>My direct contributions included:
+        <ul class="list1">
+           <li>3D Design and Rapid Prototyping via FDM and SLA 3D printing</li> 
+           <li>Protype Testing and Validation</li>
+           <li>Design for manufacturability</li>
+           <li>Material sourcing and tracking</li>
+           <li>FDA submission and documentation</li>
+           <li>Failure Modes and Effects Analysis on all components of the device</li>
+        </ul>
+
+    </p>
+    </section>
+    <script src="ms-script.js"></script>
+</body>
+</html>

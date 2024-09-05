@@ -35,25 +35,216 @@
                 </div>
             </div>
     </nav>
-
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./" alt="William Foley profile picture"> <!--ADD PROFILE PIC-->
+            <img src="./assets/WF_Profile_Picture.png" alt="William Foley profile picture" class="profilepic"/> <!--ADD PROFILE PIC-->
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">William Foley</h1>
             <p class="section__text__p2">Front end developer, Designer, Engineer</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/')">Download CV</button>
+                <button class="btn btn-color-2" onclick="window.open('./assets/William_J_Foley_Resume_2024.PDF')">Download CV</button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
             </div> <!--ADD CV PDF IN ASSET FOLDER AND TO ONCLICK-->
-            <div class="socials-container">
-                <img src="./assets/linkedin" alt="My Linkedin Profile" class="icon" onclick="location.href='https://linkedin.com/in/william-foley-031b1970'"> <!--OBTAIN LINKEDIN ICON IMAGE-->
-                <img src="./assets/github" alt="My GitHub" class="icon" onclick="location.href='https://github.com/Chibchakum'">
+            <div id="socials-container">
+                <img src="./assets/linkedin.svg" alt="My Linkedin Profile" class="icon" onclick="location.href='https://linkedin.com/in/william-foley-031b1970'"> <!--OBTAIN LINKEDIN ICON IMAGE-->
+                <img src="./assets/github.svg" alt="My GitHub" class="icon" onclick="location.href='https://github.com/Chibchakum'">
             </div>
         </div>
     </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./resources/profilepictures/william_aurora_2.png" alt="Profile Picture" class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.svg" alt="Experience Icon" class="icon"/>
+                        <h3>Experience</h3>
+                        <p>Investment Banking [2.5 Years]<br/>Product Design + Mechanical Engineering [7 years]<br>Software Development [6 mo]<br>Research [4 years]</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.svg" alt="Education Icon" class="icon">
+                        <h3>Education</h3>
+                        <p>The Cooper Union for the Advancement of Science and Art</p>
+                        <p>Bachelors of Mechanical Engineering 2012<br/>Masters of Mechanical Engineering 2015</p>
+                    </div>
+                </div>
+                <div class="text">
+                    <p>Researcher turned Engineer turned Product Designer turned Investment Banker now persuing Full Stack Development. <br>I'm a lifetime New Yorker who spent time building new agriculture and energy technology in Iceland.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.svg" alt="Arrow Icon" class="arrow" onclick="location.href='#experience'"/>
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Software Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.svg" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.svg" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.svg" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.svg" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Figma</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.svg" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Git</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <!--<article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Material UI</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>-->
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Engineering and Design</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.svg" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>SolidWorks</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.svg" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Rapid Prototyping</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.svg" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Management</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.svg" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Steam Generator</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.svg" alt="Experience icon" class="icon"/>
+                            <div>
+                                <h3>Radiant Heat Piping</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.svg" alt="Arrow Icon" class="arrow" onclick="location.href='#projects'"/>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">My</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+               <div class="details-container color-container">
+                <h2 class="experience-sub-title project-title">Nautilus</h2>
+                <p>Bank Onboarding Tool</p>
+                <div class="article-container project-image-container">
+                    <img src="./resources/nautilus/screen1.PNG" alt="Nautilus Onboarding" class="project-img">
+                </div>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://nautilusonboarding.com/'">Home Page</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <h2 class="experience-sub-title project-title">Heated Gardens</h2>
+                <p>New York City + Iceland</p>
+                <div class="article-container">
+                    <img src="./resources/cooperroof/winter_grass.JPG" alt="Heated Gardens" class="project-img"> 
+                </div>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='./gardens.html'">Project Page</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <h2 class="experience-sub-title project-title">Buprenorphine Dispenser</h2>
+                <p>MedicaSafe, Inc</p>
+                <div class="article-container">
+                    <img src="./resources/medicasafe/MS5000_1.jfif" alt="Project 3" class="project-img">
+                </div>
+                
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='./medicasafe.html'">Project Page</button>
+                </div> 
+            </div>
+            
+            </div>
+        </div>
+        <img src="./assets/arrow.svg" alt="Arrow Icon" class="arrow" onclick="location.href='#contact'"/>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-contaier">
+                <img src="./assets/gmail_logo.png" alt="Email Icon" class="icon contact-contact">
+                <p><a href="mailto:william.foley41@gmail.com">william.foley41@gmail.com</a></p>
+            </div>
+            <div class="contact-info-contaier">
+                <img src="./assets/linkedin.svg" alt="Linkedin Icon" class="icon contact-icon">
+                <p><a href="https://linkedin.com/in/william-foley-031b1970'">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 William Foley. All rights Reserved</p>
+    </footer>
     <script src="script.js"></script>    
 </body>
 </html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heated Garden Project</title>
+    <link rel="stylesheet" href="gardenstyle.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">William Foley</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="./index.html#about">About</a></li>
+                <li><a href="./index.html#experience">Experience</a></li>
+                <li><a href="./index.html#projects">Projects</a></li>
+                <li><a href="./index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">William Foley</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span> <!--HTML for line in hamburger--> 
+                    <span></span> <!--HTML for line in hamburger-->
+                    <span></span> <!--HTML for line in hamburger-->
+                </div>
+                <div class="menu-links">
+                    <li><a href="./index.html#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="./index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="./index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="./index.html#contact" onclick="toggleMenu()">Contact</a></li>  
+                </div>
+            </div>
+    </nav>
+    <section id="iceland">
+        <div class="slider-container">
+            <div class="slide">
+                <div class="item" style="background-image: url(./resources/iceland/garden.jpg);">
+                    <div class="content">
+                        <h2 class="name">Experimental Garden</h2>
+                            <p class="des">The Hveragerdi Test Garden compares the effect of geothermal ground heat vs no heat</p>
+                            <button>See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(./resources/iceland/heated_v_unheated.JPG);">
+                    <div class="content">
+                        <h2 class="name">Enhanced Plant Growth</h2>
+                            <p class="des">Adding heat to the soil improves a plant's ability to grow in colder climates</p>
+                            <button>See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(./resources/iceland/tomato2012.JPG);">
+                    <div class="content">
+                        <h2 class="name">Ripe Tomatoes</h2>
+                            <p class="des">Red tomatoes growing outside - Sept 2012</p>
+                            <button>See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(./resources/iceland/zuchinni2012.JPG);">
+                    <div class="content">
+                        <h2 class="name">Zucchini</h2>
+                            <p class="des">Full grown zucchini ready for harvest - Sept 2012</p>
+                            <button>See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(./resources/iceland/bananas.jpg);">
+                    <div class="content">
+                        <h2 class="name">Bananas</h2>
+                            <p class="des">Heated banana able to survive the Icelandic summer while the unheated could not</p>
+                            <button>See More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="garden-button">
+                <button class="prev"><img src="./assets/arrow_left.svg" alt="Left Arrow Icon" class="arrow""/></button>
+                <button class="next"><img src="./assets/arrow_right.svg" alt="Right Arrow Icon" class="arrow""/></button>
+            </div>
+        </div>
+    </section>
+    <section id="new-york">
+
+    </section>
+    <script src="gardenscript.js"></script>
+</body>
+</html>
