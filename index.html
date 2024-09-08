@@ -8,36 +8,40 @@
     <link rel="stylesheet" href="mediaqueries.css"/>
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">William Foley</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">William Foley</div>
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span> <!--HTML for line in hamburger--> 
-                    <span></span> <!--HTML for line in hamburger-->
-                    <span></span> <!--HTML for line in hamburger-->
-                </div>
-                <div class="menu-links">
-                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>  
-                </div>
+    <header>
+        <nav id="desktop-nav">
+            <div class="logo">William Foley</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
-    </nav>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">William Foley</div>
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()" aria-label="Open menu">
+                        <span></span> <!--HTML for line in hamburger--> 
+                        <span></span> <!--HTML for line in hamburger-->
+                        <span></span> <!--HTML for line in hamburger-->
+                    </div>
+                    <div class="menu-links">
+                        <ul>
+                            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>  
+                        </ul>
+                    </div>
+                </div>
+        </nav>
+    </header>
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/WF_Profile_Picture.png" alt="William Foley profile picture" class="profilepic"/> <!--ADD PROFILE PIC-->
+            <img src="./assets/WF_Profile_Picture.png" alt="William Foley profile picture" class="profilepic"/> 
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
@@ -46,9 +50,9 @@
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./assets/William_J_Foley_Resume_2024.PDF')">Download CV</button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
-            </div> <!--ADD CV PDF IN ASSET FOLDER AND TO ONCLICK-->
+            </div> 
             <div id="socials-container">
-                <img src="./assets/linkedin.svg" alt="My Linkedin Profile" class="icon" onclick="location.href='https://linkedin.com/in/william-foley-031b1970'"> <!--OBTAIN LINKEDIN ICON IMAGE-->
+                <img src="./assets/linkedin.svg" alt="My Linkedin Profile" class="icon" onclick="location.href='https://linkedin.com/in/william-foley-031b1970'"> 
                 <img src="./assets/github.svg" alt="My GitHub" class="icon" onclick="location.href='https://github.com/Chibchakum'">
             </div>
         </div>
@@ -124,13 +128,6 @@
                                 <p>Basic</p>
                             </div>
                         </article>
-                        <!--<article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-                            <div>
-                                <h3>Material UI</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>-->
                     </div>
                 </div>
                 <div class="details-container">
@@ -196,7 +193,7 @@
                 <h2 class="experience-sub-title project-title">Heated Gardens</h2>
                 <p>New York City + Iceland</p>
                 <div class="article-container">
-                    <img src="./resources/cooperroof/winter_grass.JPG" alt="Heated Gardens" class="project-img"> 
+                    <img src="./resources/cooperroof/winter_grass_resize.jpg" alt="Heated Gardens and Green Roofs" class="project-img"> 
                 </div>
                 <div class="btn-container">
                     <button class="btn btn-color-2 project-btn" onclick="location.href='./gardens.html'">Project Page</button>
@@ -208,12 +205,10 @@
                 <div class="article-container">
                     <img src="./resources/medicasafe/MS5000_1.jfif" alt="Project 3" class="project-img">
                 </div>
-                
                 <div class="btn-container">
                     <button class="btn btn-color-2 project-btn" onclick="location.href='./medicasafe.html'">Project Page</button>
                 </div> 
-            </div>
-            
+            </div>    
             </div>
         </div>
         <img src="./assets/arrow.svg" alt="Arrow Icon" class="arrow" onclick="location.href='#contact'"/>
@@ -228,7 +223,7 @@
             </div>
             <div class="contact-info-contaier">
                 <img src="./assets/linkedin.svg" alt="Linkedin Icon" class="icon contact-icon">
-                <p><a href="https://linkedin.com/in/william-foley-031b1970'">LinkedIn</a></p>
+                <p><a href="https://linkedin.com/in/william-foley-031b1970">LinkedIn</a></p>
             </div>
         </div>
     </section>
