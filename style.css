@@ -150,7 +150,7 @@ a:hover {
 /* SECTIONS */
 section {
     padding-top: 4vh;
-    height: 96 vh;
+   /*height: 96vh;*/
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -165,7 +165,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 80 vh;
+    /*height: 80vh;*/
 }
 
 .profilepic {
@@ -231,7 +231,7 @@ section {
 }
 
 .btn-color-1, .btn-color-2 {
-    border: rgb(53,53,53) 0.1 rem solid;
+    border: rgb(53,53,53) 0.1rem solid;
 }
 
 .btn-color-1:hover, 
@@ -284,6 +284,8 @@ section {
 
 .about-containers, .about-details-container {
     display: flex;
+    /* justify-content: center;
+    flex-direction: column; */
 }
 
 .about-pic {
