@@ -261,17 +261,23 @@ section {
     gap: 1rem;
 }
 
+/* ABOUT SECTION */
+
 #about {
     position: relative;
+    text-align: center; /* Ensures the section title is centered */
 }
 
 .about-containers{
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    display: flex;
+    flex-direction: row; /* Aligns details side-by-side */
 }
 
 .about-details-container {
+    display: flex;
     justify-content: center;
     flex-direction: column;
 }
@@ -301,7 +307,12 @@ section {
 }
 
 .section-container {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers content vertically */
     gap: 4rem;
+    max-width: 1200px; /* Controls the width of the container */
+    margin: 0 auto; /* Centers the container on the page */
     height: 80%;
 }
 
