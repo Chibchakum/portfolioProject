@@ -10,6 +10,7 @@
 
 body {
    font-family: "Catamaran", sans-serif; 
+   background-color: whitesmoke;
 }
 
 html {
@@ -330,6 +331,16 @@ section {
     position: relative;
 }
 
+.experience-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.experience-details-sub-container {
+    margin-bottom: 2rem;
+}
+
 .experience-sub-title {
     color: rgb(85, 85, 85);
     font-weight: 600;
@@ -346,7 +357,7 @@ section {
 .article-container {
     display: flex;
     text-align: initial;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: row;
     gap: 2.5rem;
     justify-content: space-around
@@ -380,9 +391,16 @@ article .icon {
 
 .project-img {
     border-radius: 2rem;
-    width: 90%;
-    height: 90%;
+    width: 50%;
+    height: auto;
     border: rgb(207, 207, 207) .1rem solid;
+}
+
+.img-description {
+    width: 50%; /* Allocate the remaining space for the text */
+    font-size: 1rem; /* Adjust text size */
+    color: black;
+    margin: auto 1rem;
 }
 
 .project-title {
