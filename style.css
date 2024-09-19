@@ -152,7 +152,7 @@ a:hover {
 section {
     padding-top: 4vh;
    /*height: 96vh;*/
-    margin: 0 10rem;
+    margin: 0 20rem;
     box-sizing: border-box;
     min-height: fit-content;
 }
@@ -357,10 +357,10 @@ section {
 .article-container {
     display: flex;
     text-align: initial;
-    /* flex-wrap: wrap; */
-    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-direction: row;  */
     gap: 2.5rem;
-    justify-content: space-around
+    justify-content: space-around 
 }
 
 article {
@@ -386,8 +386,10 @@ article .icon {
 }
 
 #projects .article-container {
-    margin: 1rem 0 1rem 0;
+    margin: 2rem 0 2rem 0;
+
 }
+
 
 .project-img {
     border-radius: 2rem;
